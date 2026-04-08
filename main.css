@@ -1,0 +1,155 @@
+/*.hero{
+    background-image: url(../neweraschool/assets/schoolback.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-attachment: fixed;}
+*/
+
+/* *{
+    border: 1px solid red;
+} */
+
+
+.hero{
+            background-image: url(../neweraschool/assets/schoolback.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+             background-blend-mode: overlay;
+             background-attachment: fixed;
+            border-radius: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(88, 86, 86);
+            animation: slideshow 50s ease-in infinite;
+            animation-direction: alternate;
+            }
+
+            @keyframes slideshow {
+                0% { background-image: url("../neweraschool/assets/schoollibrary.PNG");}
+                20% { background-image: url("../neweraschool/assets/schoolassembly.jpg");}
+                40% { background-image: url("../neweraschool/assets/schoolchildrenwithbags.PNG");}
+                60% { background-image:  url(../neweraschool/assets/schoolback.png);}
+                100% { background-image: url(../neweraschool/assets/Staffroom.jpg);}
+            }
+
+ nav ul li:hover{
+        color: rgb(248, 246, 240);
+            transition: 1s;
+    border-bottom: 1px solid salmon;
+    border-radius: 8px;
+            
+        }
+
+.playground{
+    background-image: url(../neweraschool/assets/schoolchildrenwithbags.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    border-radius: 30px;
+}
+
+.pg{
+    background: transparent;
+    backdrop-filter: blur(2px);
+    border: 300rem;
+}
+
+.banner{
+    width: 100%;
+    overflow-x: hidden;
+}
+.breaking{
+    color: rgb(243, 243, 242);
+    border-radius: 2px;
+    animation: scrollText 20s linear infinite;
+    width: 100%;
+    overflow: hidden;
+}
+
+@keyframes scrollText{
+    0%{transform: translate(0);}
+
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+     .bounce-text{
+            display: flex;
+        color: rgb(229, 230, 224);
+        font-size: 50px;
+        }
+.bounce-text span{
+  animation: bounce 3s infinite ease-in-out;
+  display: inline-block;
+}
+
+.bounce-text span:nth-child(1){
+    animation-delay: 0.1s;
+}
+
+.bounce-text span:nth-child(2){
+    animation-delay: 0.3s;
+}
+
+
+.bounce-text span:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+
+.bounce-text span:nth-child(4){
+    animation-delay: 0.7s;
+    
+}
+.bounce-text span:nth-child(5){
+    animation-delay: 0.9s}
+
+.bounce-text span:nth-child(6){
+    animation-delay: 0.11s}
+    
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+
+     100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-30px);
+    }
+}
+
+.library{
+    height: 100%;
+    background: url("../neweraschool/assets/schoollibrary.PNG");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+.feat>div{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    height: 20vh;
+}
+
+.feat>div:where(:not(:last-of-type)){
+    border-right: 5px solid orangered;
+}
+
+.feat>div:first-of-type{
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+.feat>div:last-of-type{
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
